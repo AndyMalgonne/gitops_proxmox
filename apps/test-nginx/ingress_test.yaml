@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-app-test
+spec:
+  ingressClassName: traefik
+  rules:
+  - host: kub.andytropmimi.fr
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: service-app-test
+            port:
+              number: 80
