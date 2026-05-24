@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: portfolio-next
-        image: ghcr.io/andymalgonne/portfolio:sha-9ca1a00
+        image: ghcr.io/andymalgonne/portfolio:sha-c89b2e1
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
